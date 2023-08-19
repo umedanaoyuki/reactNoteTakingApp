@@ -2,11 +2,15 @@ import Sidebar from "./components/Sidebar.jsx";
 import Main from "./components/Main.jsx";
 import './App.css';
 
-function App() {
+const App = () => {
+
+    const onAddNote = () => {
+      console.log("onAddNote");
+    };
 
   return (
     <div className="App">
-        <Sidebar/>
+        <Sidebar onAddNote={onAddNote}/>
         <Main />
     </div>
   )

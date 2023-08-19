@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import './Main.css';
 
-class Main extends Component {
-    render() {
+const  Main = () => {
         return (
             <>
                 <p>Main</p>
             </>
         );
-    }
 }
 
 Main.propTypes = {};

@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import './Sidebar.css';
 
 
-class Sidebar extends Component {
-    render() {
+const Sidebar = () => {
         return (
             <div className="app-sidebar">
                 <div className="app-sidebar-header">
@@ -22,7 +21,6 @@ class Sidebar extends Component {
                 </div>
             </div>
         );
-    }
 }
 
 Sidebar.propTypes = {};
