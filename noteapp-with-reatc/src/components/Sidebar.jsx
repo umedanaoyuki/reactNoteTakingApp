@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './Sidebar.css';
 
-
-const Sidebar = ({onAddNote, notes}) => {
+const Sidebar = ({onAddNote, notes, onDeleteNote}) => {
         return (
             <div className="app-sidebar">
                 <div className="app-sidebar-header">
@@ -14,13 +13,13 @@ const Sidebar = ({onAddNote, notes}) => {
                         <div className="app-sidebar-note">
                             <div className="sidebar-note-title">
                                 <strong>{note.title}</strong>
-                                <button>削除</button>
+                                {/* //引数を取るときはアロー関数で記入する */}
+                                <button onClick={() => onDeleteNote(note.id)}>削除</button>
                             </div>
                             <p>{note.content}</p>
                             <small>最後の修正日：{new Date(note.modDate).toLocaleDateString('ja-JP', { hour : "numeric" , minute : "numeric"})}</small>
                         </div>
-                        )
-                    )}
+                        ))}
                 </div>
             </div>
         );
