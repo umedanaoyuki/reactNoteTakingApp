@@ -7,12 +7,12 @@ const App = () => {
 
     const [notes, setNotes] = useState([
     ]);
-    
+
     const onAddNote = () => {
       console.log("追加ボタンの押下");
       const newNote = {
           id: 1,
-          title: "新しいノート",
+          title: "新しいノートです",
           content: "内容",
           modDate: Date.now(),
       };
@@ -22,7 +22,8 @@ const App = () => {
 
   return (
     <div className="App">
-        <Sidebar onAddNote={onAddNote}/>
+        <Sidebar onAddNote={onAddNote}
+        notes={notes}/>
         <Main />
     </div>
   )
