@@ -5,8 +5,8 @@ import './Sidebar.css';
 class Sidebar extends Component {
     render() {
         return (
-            <div>
-                <p>Sidebar</p>
+            <div className="app-sodebar">
+                <div className="app-sidebar-"></div>
             </div>
         );
     }
