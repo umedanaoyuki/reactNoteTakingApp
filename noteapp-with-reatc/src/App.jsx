@@ -5,7 +5,7 @@ import './App.css';
 const App = () => {
 
     const onAddNote = () => {
-      console.log("onAddNote");
+      console.log("追加ボタンの押下");
     };
 
   return (
