@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Sidebar.css';
 
-const Sidebar = ({onAddNote, notes, onDeleteNote}) => {
+const Sidebar = ({onAddNote, notes, onDeleteNote, activeNote,setActiveNote}) => {
         return (
             <div className="app-sidebar">
                 <div className="app-sidebar-header">
@@ -10,7 +10,7 @@ const Sidebar = ({onAddNote, notes, onDeleteNote}) => {
                 </div>
                 <div className="app-sidebar-notes">
                     {notes.map((note) => (
-                        <div className="app-sidebar-note">
+                        <div className="app-sidebar-note" key={note.id}>
                             <div className="sidebar-note-title">
                                 <strong>{note.title}</strong>
                                 {/* //引数を取るときはアロー関数で記入する */}
