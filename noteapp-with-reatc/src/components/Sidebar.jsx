@@ -21,7 +21,6 @@ const Sidebar = ({onAddNote, notes}) => {
                         </div>
                         )
                     )}
-
                 </div>
             </div>
         );
