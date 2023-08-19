@@ -10,7 +10,7 @@ const Sidebar = ({onAddNote, notes, onDeleteNote, activeNote,setActiveNote}) => 
                 </div>
                 <div className="app-sidebar-notes">
                     {notes.map((note) => (
-                        <div className="app-sidebar-note" key={note.id}>
+                        <div className={`app-sidebar-note ${note.id === activeNote && "active"}`}  key={note.id} onClick={() => setActiveNote(note.id)}>
                             <div className="sidebar-note-title">
                                 <strong>{note.title}</strong>
                                 {/* //引数を取るときはアロー関数で記入する */}
