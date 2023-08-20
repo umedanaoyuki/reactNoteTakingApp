@@ -57,4 +57,13 @@ button {
     background-color: pink;
 }
 
+.no-active-note {
+    width: 70%;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
 

@@ -4,7 +4,7 @@ import './Main.css';
 const  Main = ({activeNote}) => {
 
     if (!activeNote) {
-        return (<p>ノートが選択されておりません</p>)
+        return (<p　className="no-active-note">ノートが選択されておりません</p>)
     }
 
 
