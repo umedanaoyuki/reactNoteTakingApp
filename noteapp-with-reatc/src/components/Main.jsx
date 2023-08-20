@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import './Main.css';
 
-const  Main = ({activeNote}) => {
+const  Main = ({activeNote, onUpdateNote}) => {
 
-    const onEditNote = () => {
+    const onEditNote = (key, value) => {
+        onUpdateNote({
+            id: activeNote.id,
+            [key]: value,
+            modDate: Date.now(),
+        })
 
     };
 

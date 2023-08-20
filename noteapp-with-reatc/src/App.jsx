@@ -44,6 +44,7 @@ const App = () => {
                return note;
            }
         });
+      setNotes(updateNotesArray);
     };
 
 
@@ -55,7 +56,8 @@ const App = () => {
         notes={notes}
         activeNote={activeNote}
         setActiveNote={setActiveNote}/>
-        <Main activeNote={getActiveNote()}/>
+        <Main activeNote={getActiveNote()}
+              onUpdateNote={onUpdateNote} />
     </div>
   )
 }
