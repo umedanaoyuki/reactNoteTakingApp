@@ -18,7 +18,6 @@ const  Main = ({activeNote, onUpdateNote}) => {
         return (<p　className="no-active-note">ノートが選択されておりません</p>)
     }
 
-
         return (
             <div className="app-main">
                 <div className="app-main-note-edit">
